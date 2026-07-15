@@ -11,6 +11,16 @@ Globi-V 是一套运行在 Milk-V DuoS（SG2000）上的道路视觉感知原型
 - **盲道分割**：提供 YOLOv8 Seg 转换与板端输出解码脚本。
 - **板端实时链路**：接入 GC2083 摄像头、VPSS、cviruntime 和 RTSP，并提供异常恢复与部署脚本。
 
+## Globi 生态
+
+| 仓库 | 职责 |
+| --- | --- |
+| [`globi-v`](https://github.com/chius-me/globi-v) | Milk-V DuoS 嵌入式视觉感知与板端推理 |
+| [`globi-app`](https://github.com/chius-me/globi-app) | 面向视障用户与家属的 Flutter 移动客户端 |
+| [`globi-server`](https://github.com/chius-me/globi-server) | FastAPI 后端、AI 语音助手、定位上报和家属管理 |
+
+三个仓库分别维护视觉端、移动端和服务端。当前仓库只说明产品组件关系，不代表三个组件已经完成端到端发布验证。
+
 ## 仓库结构
 
 ```text
@@ -104,4 +114,4 @@ cd board-runtime/traffic-light-live-runner
 
 ## 许可说明
 
-本仓库暂未添加统一开源许可证。项目代码、上游 SDK/API 和演示素材可能适用不同授权；复用或分发前请分别核对来源与许可。
+本仓库中由项目维护者提供且有权授权的内容采用 [MIT License](LICENSE)。Milk-V、CVITEK 等上游 SDK/API，以及模型、数据集和第三方输入素材仍遵循各自的许可条款；复用或分发前请分别核对来源与授权。
