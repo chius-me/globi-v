@@ -1,0 +1,730 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text",
+      "id": "t200",
+      "x": 220,
+      "y": 10,
+      "text": "多模态感知融合与反馈闭环",
+      "fontSize": 30,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "多模态感知融合与反馈闭环",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "bg201",
+      "x": 30,
+      "y": 70,
+      "width": 250,
+      "height": 490,
+      "backgroundColor": "#dbe4ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 1,
+      "opacity": 22,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "bg202",
+      "x": 310,
+      "y": 70,
+      "width": 250,
+      "height": 490,
+      "backgroundColor": "#d3f9d8",
+      "fillStyle": "solid",
+      "strokeColor": "#2b8a3e",
+      "strokeWidth": 1,
+      "opacity": 22,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "bg203",
+      "x": 590,
+      "y": 70,
+      "width": 240,
+      "height": 490,
+      "backgroundColor": "#f8f0fc",
+      "fillStyle": "solid",
+      "strokeColor": "#9c36b5",
+      "strokeWidth": 1,
+      "opacity": 22,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t204",
+      "x": 90,
+      "y": 82,
+      "text": "感知输入",
+      "fontSize": 24,
+      "fontFamily": 1,
+      "strokeColor": "#1971c2",
+      "originalText": "感知输入",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "t205",
+      "x": 370,
+      "y": 82,
+      "text": "处理与融合",
+      "fontSize": 24,
+      "fontFamily": 1,
+      "strokeColor": "#2b8a3e",
+      "originalText": "处理与融合",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "t206",
+      "x": 610,
+      "y": 82,
+      "text": "反馈输出",
+      "fontSize": 24,
+      "fontFamily": 1,
+      "strokeColor": "#9c36b5",
+      "originalText": "反馈输出",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r207",
+      "x": 45,
+      "y": 130,
+      "width": 220,
+      "height": 80,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t208",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t208",
+      "x": 55,
+      "y": 140,
+      "width": 200,
+      "height": 60,
+      "text": "视觉\n红绿灯/盲道/障碍物\nGC2083摄像头",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r207",
+      "originalText": "视觉\n红绿灯/盲道/障碍物\nGC2083摄像头",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r209",
+      "x": 45,
+      "y": 235,
+      "width": 220,
+      "height": 80,
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t210",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t210",
+      "x": 55,
+      "y": 245,
+      "width": 200,
+      "height": 60,
+      "text": "触觉\n碰撞/压力/接近\n振动/压电传感器",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r209",
+      "originalText": "触觉\n碰撞/压力/接近\n振动/压电传感器",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r211",
+      "x": 45,
+      "y": 340,
+      "width": 220,
+      "height": 80,
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t212",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t212",
+      "x": 55,
+      "y": 350,
+      "width": 200,
+      "height": 60,
+      "text": "听觉\n环境声/语音指令\nMEMS麦克风",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r211",
+      "originalText": "听觉\n环境声/语音指令\nMEMS麦克风",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r213",
+      "x": 45,
+      "y": 445,
+      "width": 220,
+      "height": 80,
+      "backgroundColor": "#c3fae8",
+      "fillStyle": "solid",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t214",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t214",
+      "x": 55,
+      "y": 455,
+      "width": 200,
+      "height": 60,
+      "text": "姿态\n加速度/角速度\nIMU(6轴)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r213",
+      "originalText": "姿态\n加速度/角速度\nIMU(6轴)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r215",
+      "x": 325,
+      "y": 130,
+      "width": 220,
+      "height": 80,
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t216",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t216",
+      "x": 335,
+      "y": 140,
+      "width": 200,
+      "height": 60,
+      "text": "TPU推理\nYOLOv5s INT8\n117ms/帧",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r215",
+      "originalText": "TPU推理\nYOLOv5s INT8\n117ms/帧",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r217",
+      "x": 325,
+      "y": 235,
+      "width": 220,
+      "height": 80,
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t218",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t218",
+      "x": 335,
+      "y": 245,
+      "width": 200,
+      "height": 60,
+      "text": "AMP调度\nARM决策\nRISC-V控制",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r217",
+      "originalText": "AMP调度\nARM决策\nRISC-V控制",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r219",
+      "x": 325,
+      "y": 340,
+      "width": 220,
+      "height": 80,
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t220",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t220",
+      "x": 335,
+      "y": 350,
+      "width": 200,
+      "height": 60,
+      "text": "传感器融合\n多源数据对齐\n卡尔曼滤波",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r219",
+      "originalText": "传感器融合\n多源数据对齐\n卡尔曼滤波",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r221",
+      "x": 325,
+      "y": 445,
+      "width": 220,
+      "height": 80,
+      "backgroundColor": "#e5dbff",
+      "fillStyle": "solid",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t222",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t222",
+      "x": 335,
+      "y": 455,
+      "width": 200,
+      "height": 60,
+      "text": "决策引擎\n避障优先级\n路径规划",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r221",
+      "originalText": "决策引擎\n避障优先级\n路径规划",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r223",
+      "x": 605,
+      "y": 130,
+      "width": 210,
+      "height": 80,
+      "backgroundColor": "#f3d9fa",
+      "fillStyle": "solid",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t224",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t224",
+      "x": 615,
+      "y": 140,
+      "width": 190,
+      "height": 60,
+      "text": "触觉反馈\n振动马达阵列\n方向/强度编码",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r223",
+      "originalText": "触觉反馈\n振动马达阵列\n方向/强度编码",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r225",
+      "x": 605,
+      "y": 235,
+      "width": 210,
+      "height": 80,
+      "backgroundColor": "#e5dbff",
+      "fillStyle": "solid",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t226",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t226",
+      "x": 615,
+      "y": 245,
+      "width": 190,
+      "height": 60,
+      "text": "语音播报\nTTS中文播报\n场景描述/警告",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r225",
+      "originalText": "语音播报\nTTS中文播报\n场景描述/警告",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r227",
+      "x": 605,
+      "y": 340,
+      "width": 210,
+      "height": 80,
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t228",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t228",
+      "x": 615,
+      "y": 350,
+      "width": 190,
+      "height": 60,
+      "text": "LED指示\nRGB状态灯\n模式/电量/告警",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r227",
+      "originalText": "LED指示\nRGB状态灯\n模式/电量/告警",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r229",
+      "x": 605,
+      "y": 445,
+      "width": 210,
+      "height": 80,
+      "backgroundColor": "#f3d9fa",
+      "fillStyle": "solid",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t230",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t230",
+      "x": 615,
+      "y": 455,
+      "width": 190,
+      "height": 60,
+      "text": "APP联动\n蓝牙/WiFi\n远程监护/设置",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r229",
+      "originalText": "APP联动\n蓝牙/WiFi\n远程监护/设置",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "a231",
+      "x": 280,
+      "y": 170,
+      "width": 30,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a232",
+      "x": 560,
+      "y": 170,
+      "width": 30,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "strokeColor": "#2b8a3e",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a233",
+      "x": 280,
+      "y": 275,
+      "width": 30,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a234",
+      "x": 560,
+      "y": 275,
+      "width": 30,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "strokeColor": "#2b8a3e",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a235",
+      "x": 280,
+      "y": 380,
+      "width": 30,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a236",
+      "x": 560,
+      "y": 380,
+      "width": 30,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "strokeColor": "#2b8a3e",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a237",
+      "x": 280,
+      "y": 485,
+      "width": 30,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a238",
+      "x": 560,
+      "y": 485,
+      "width": 30,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "strokeColor": "#2b8a3e",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

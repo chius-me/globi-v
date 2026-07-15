@@ -1,0 +1,503 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text",
+      "id": "title",
+      "x": 120,
+      "y": 10,
+      "text": "YOLOv5s Split解码修复 — 核心技术创新",
+      "fontSize": 28,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "YOLOv5s Split解码修复 — 核心技术创新",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "prob_t",
+      "x": 60,
+      "y": 60,
+      "text": "❌ 问题",
+      "fontSize": 22,
+      "fontFamily": 1,
+      "strokeColor": "#ef4444",
+      "originalText": "问题",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "prob_bg",
+      "x": 30,
+      "y": 90,
+      "width": 340,
+      "height": 380,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeColor": "#ef4444",
+      "strokeWidth": 1,
+      "opacity": 25
+    },
+    {
+      "type": "text",
+      "id": "q1",
+      "x": 50,
+      "y": 100,
+      "text": "标准 YOLOv5s 输出:",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "标准 YOLOv5s 输出:",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "concat",
+      "x": 60,
+      "y": 130,
+      "width": 280,
+      "height": 50,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_concat",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_concat",
+      "x": 65,
+      "y": 142,
+      "width": 270,
+      "height": 25,
+      "text": "bbox + cls (concat)  1个张量",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "concat",
+      "originalText": "bbox + cls (concat)  1个张量",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "q2",
+      "x": 50,
+      "y": 210,
+      "text": "但 TPU-MLIR 编译后:",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#ef4444",
+      "originalText": "但 TPU-MLIR 编译后:",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "split1",
+      "x": 60,
+      "y": 245,
+      "width": 280,
+      "height": 50,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_split1",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_split1",
+      "x": 65,
+      "y": 257,
+      "width": 270,
+      "height": 25,
+      "text": "输出0: bbox (x,y,w,h)  ← 未转换!",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "split1",
+      "originalText": "输出0: bbox (x,y,w,h)  ← 未转换!",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "split2",
+      "x": 60,
+      "y": 310,
+      "width": 280,
+      "height": 50,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_split2",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_split2",
+      "x": 65,
+      "y": 322,
+      "width": 270,
+      "height": 25,
+      "text": "输出1: cls (red,yellow,green)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "split2",
+      "originalText": "输出1: cls (red,yellow,green)",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "q3",
+      "x": 50,
+      "y": 390,
+      "text": "后果: 直接套用标准解码 → 精度完全错误",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#ef4444",
+      "originalText": "后果: 直接套用标准解码 → 精度完全错误",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "q4",
+      "x": 50,
+      "y": 415,
+      "text": "官方 TDL SDK 不支持此输出格式",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#ef4444",
+      "originalText": "官方 TDL SDK 不支持此输出格式",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "sol_t",
+      "x": 460,
+      "y": 60,
+      "text": "✅ 解决方案",
+      "fontSize": 22,
+      "fontFamily": 1,
+      "strokeColor": "#22c55e",
+      "originalText": "解决方案",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "sol_bg",
+      "x": 400,
+      "y": 90,
+      "width": 380,
+      "height": 380,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "strokeWidth": 1,
+      "opacity": 25
+    },
+    {
+      "type": "rectangle",
+      "id": "s1",
+      "x": 420,
+      "y": 110,
+      "width": 340,
+      "height": 50,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeColor": "#8b5cf6",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_s1",
+          "type": "text"
+        },
+        {
+          "id": "as1",
+          "type": "arrow"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_s1",
+      "x": 425,
+      "y": 122,
+      "width": 330,
+      "height": 25,
+      "text": "① 逐个 anchor 解码 bbox + cls",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "s1",
+      "originalText": "逐个 anchor 解码 bbox + cls",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "as1",
+      "x": 590,
+      "y": 160,
+      "width": 0,
+      "height": 30,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "strokeColor": "#8b5cf6",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "rectangle",
+      "id": "s2",
+      "x": 420,
+      "y": 200,
+      "width": 340,
+      "height": 70,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_s2",
+          "type": "text"
+        },
+        {
+          "id": "as2",
+          "type": "arrow"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_s2",
+      "x": 425,
+      "y": 212,
+      "width": 330,
+      "height": 45,
+      "text": "② sigmoid(tx,ty) →\ncx=(tx*2-0.5+gx)*stride",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "s2",
+      "originalText": "② sigmoid(tx,ty) →\ncx=(tx*2-0.5+gx)*stride",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "as2",
+      "x": 590,
+      "y": 270,
+      "width": 0,
+      "height": 30,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "strokeColor": "#f59e0b",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "rectangle",
+      "id": "s3",
+      "x": 400,
+      "y": 310,
+      "width": 380,
+      "height": 70,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeColor": "#ef4444",
+      "strokeWidth": 3,
+      "boundElements": [
+        {
+          "id": "t_s3",
+          "type": "text"
+        },
+        {
+          "id": "as3",
+          "type": "arrow"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_s3",
+      "x": 405,
+      "y": 322,
+      "width": 370,
+      "height": 45,
+      "text": "③ ★ xywh → xyxy 转换 ★\nw=(sig(tw)*2)^2*aw, h=(sig(th)*2)^2*ah",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "s3",
+      "originalText": "③ ★ xywh → xyxy 转换 ★\nw=(sig(tw)*2)^2*aw, h=(sig(th)*2)^2*ah",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "as3",
+      "x": 590,
+      "y": 380,
+      "width": 0,
+      "height": 25,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          25
+        ]
+      ],
+      "strokeColor": "#ef4444",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "rectangle",
+      "id": "s4",
+      "x": 440,
+      "y": 415,
+      "width": 300,
+      "height": 40,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_s4",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_s4",
+      "x": 445,
+      "y": 422,
+      "width": 290,
+      "height": 25,
+      "text": "✅ 板端精度 = ONNX 精度 (完全一致)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#15803d",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "s4",
+      "originalText": "板端精度 = ONNX 精度 (完全一致)",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "v1",
+      "x": 420,
+      "y": 465,
+      "text": "验证: red_light 置信度 0.699",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "验证: red_light 置信度 0.699",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "v2",
+      "x": 420,
+      "y": 485,
+      "text": "板端 vs ONNX: 数值完全对齐 ✓",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#15803d",
+      "originalText": "板端 vs ONNX: 数值完全对齐 ✓",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "sum",
+      "x": 100,
+      "y": 490,
+      "text": "技术价值: 这是让 YOLOv5s 能在 CVITEK TPU 上正确运行的关键突破",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#8b5cf6",
+      "originalText": "技术价值: 这是让 YOLOv5s 能在 CVITEK TPU 上正确运行的关键突破",
+      "autoResize": true
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

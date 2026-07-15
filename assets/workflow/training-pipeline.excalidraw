@@ -1,0 +1,552 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text",
+      "id": "title",
+      "x": 200,
+      "y": 10,
+      "text": "YOLOv5s 模型训练流程",
+      "fontSize": 28,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "YOLOv5s 模型训练流程",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "sub",
+      "x": 230,
+      "y": 50,
+      "text": "RTX 4060 Laptop GPU (8GB) · PyTorch 2.11 · CUDA 13.0",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#757575",
+      "originalText": "RTX 4060 Laptop GPU (8GB) · PyTorch 2.11 · CUDA 13.0",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "data",
+      "x": 60,
+      "y": 90,
+      "width": 180,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_data",
+          "type": "text"
+        },
+        {
+          "id": "ad1",
+          "type": "arrow"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_data",
+      "x": 65,
+      "y": 105,
+      "width": 170,
+      "height": 25,
+      "text": "LISA 数据集",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "data",
+      "originalText": "LISA 数据集",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "ad1",
+      "x": 240,
+      "y": 120,
+      "width": 50,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "boundElements": [
+        {
+          "id": "t_ad1",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_ad1",
+      "x": 247,
+      "y": 100,
+      "width": 36,
+      "height": 20,
+      "text": "3类",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#757575",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "ad1",
+      "originalText": "3类",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "aug",
+      "x": 300,
+      "y": 90,
+      "width": 180,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeColor": "#8b5cf6",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_aug",
+          "type": "text"
+        },
+        {
+          "id": "ad2",
+          "type": "arrow"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_aug",
+      "x": 305,
+      "y": 100,
+      "width": 170,
+      "height": 40,
+      "text": "数据增强\nMosaic+翻转+HSV",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "aug",
+      "originalText": "数据增强\nMosaic+翻转+HSV",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "ad2",
+      "x": 480,
+      "y": 120,
+      "width": 50,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "rectangle",
+      "id": "train",
+      "x": 540,
+      "y": 80,
+      "width": 200,
+      "height": 80,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "strokeWidth": 3,
+      "boundElements": [
+        {
+          "id": "t_train",
+          "type": "text"
+        },
+        {
+          "id": "ad3",
+          "type": "arrow"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_train",
+      "x": 545,
+      "y": 95,
+      "width": 190,
+      "height": 50,
+      "text": "YOLOv5s 训练\n50 epochs · BS=8\nAdamW · lr=1e-3",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "train",
+      "originalText": "YOLOv5s 训练\n50 epochs · BS=8\nAdamW · lr=1e-3",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "ad3",
+      "x": 640,
+      "y": 165,
+      "width": 0,
+      "height": 40,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "text",
+      "id": "out_t",
+      "x": 520,
+      "y": 215,
+      "text": "训练产物",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "训练产物",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "o1",
+      "x": 480,
+      "y": 245,
+      "width": 150,
+      "height": 50,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_o1",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_o1",
+      "x": 485,
+      "y": 255,
+      "width": 140,
+      "height": 25,
+      "text": "best.pt (18MB)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "o1",
+      "originalText": "best.pt (18MB)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "o2",
+      "x": 660,
+      "y": 245,
+      "width": 100,
+      "height": 50,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#c3fae8",
+      "fillStyle": "solid",
+      "strokeColor": "#06b6d4",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_o2",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_o2",
+      "x": 665,
+      "y": 255,
+      "width": 90,
+      "height": 25,
+      "text": "results.png",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "o2",
+      "originalText": "results.png",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "params_bg",
+      "x": 40,
+      "y": 210,
+      "width": 380,
+      "height": 280,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#e5dbff",
+      "fillStyle": "solid",
+      "strokeColor": "#8b5cf6",
+      "strokeWidth": 1,
+      "opacity": 25
+    },
+    {
+      "type": "text",
+      "id": "params_t",
+      "x": 60,
+      "y": 220,
+      "text": "训练超参数详情",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "训练超参数详情",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "p1",
+      "x": 60,
+      "y": 255,
+      "text": "基础模型: yolov5s.pt (预训练)",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "基础模型: yolov5s.pt (预训练)",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "p2",
+      "x": 60,
+      "y": 280,
+      "text": "输入尺寸: 640×640",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "输入尺寸: 640×640",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "p3",
+      "x": 60,
+      "y": 305,
+      "text": "Batch Size: 8",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "Batch Size: 8",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "p4",
+      "x": 60,
+      "y": 330,
+      "text": "优化器: AdamW (wd=5e-4)",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "优化器: AdamW (wd=5e-4)",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "p5",
+      "x": 60,
+      "y": 355,
+      "text": "学习率: 1e-3 → 1e-5 (cosine)",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "学习率: 1e-3 → 1e-5 (cosine)",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "p6",
+      "x": 60,
+      "y": 380,
+      "text": "Epochs: 50 (patience=10)",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "Epochs: 50 (patience=10)",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "p7",
+      "x": 60,
+      "y": 405,
+      "text": "模型参数: 9.12M",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "模型参数: 9.12M",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "p8",
+      "x": 60,
+      "y": 430,
+      "text": "计算量: 24.0 GFLOPs",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "计算量: 24.0 GFLOPs",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "p9",
+      "x": 60,
+      "y": 455,
+      "text": "训练时间: ~6小时 (RTX 4060)",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "训练时间: ~6小时 (RTX 4060)",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "to_tpu",
+      "x": 555,
+      "y": 295,
+      "width": 0,
+      "height": 30,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "strokeColor": "#f59e0b",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "boundElements": [
+        {
+          "id": "t_totpu",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_totpu",
+      "x": 565,
+      "y": 298,
+      "width": 80,
+      "height": 20,
+      "text": "ONNX导出",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#f59e0b",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "to_tpu",
+      "originalText": "ONNX导出",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "tpu_box",
+      "x": 490,
+      "y": 335,
+      "width": 220,
+      "height": 50,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeColor": "#ef4444",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_tpu_box",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_tpu_box",
+      "x": 495,
+      "y": 347,
+      "width": 210,
+      "height": 25,
+      "text": "→ TPU-MLIR 编译 (INT8)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "tpu_box",
+      "originalText": "→ TPU-MLIR 编译 (INT8)",
+      "autoResize": true
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

@@ -1,0 +1,733 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text",
+      "id": "t85",
+      "x": 280,
+      "y": 10,
+      "text": "Globi-V 导盲杖系统总架构",
+      "fontSize": 32,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "Globi-V 导盲杖系统总架构",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "bg86",
+      "x": 20,
+      "y": 70,
+      "width": 820,
+      "height": 130,
+      "backgroundColor": "#dbe4ff",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "strokeWidth": 1,
+      "opacity": 25,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t87",
+      "x": 40,
+      "y": 80,
+      "text": "多模态感知输入层",
+      "fontSize": 22,
+      "fontFamily": 1,
+      "strokeColor": "#2563eb",
+      "originalText": "多模态感知输入层",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r88",
+      "x": 60,
+      "y": 115,
+      "width": 160,
+      "height": 65,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t89",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t89",
+      "x": 70,
+      "y": 125,
+      "width": 140,
+      "height": 45,
+      "text": "视觉感知\n红绿灯/盲道/障碍物",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r88",
+      "originalText": "视觉感知\n红绿灯/盲道/障碍物",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r90",
+      "x": 260,
+      "y": 115,
+      "width": 150,
+      "height": 65,
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeColor": "#f76707",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t91",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t91",
+      "x": 270,
+      "y": 125,
+      "width": 130,
+      "height": 45,
+      "text": "触觉感知\n振动传感器/压力",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r90",
+      "originalText": "触觉感知\n振动传感器/压力",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r92",
+      "x": 450,
+      "y": 115,
+      "width": 150,
+      "height": 65,
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeColor": "#7048e8",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t93",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t93",
+      "x": 460,
+      "y": 125,
+      "width": 130,
+      "height": 45,
+      "text": "听觉感知\n环境声音采集",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r92",
+      "originalText": "听觉感知\n环境声音采集",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r94",
+      "x": 640,
+      "y": 115,
+      "width": 165,
+      "height": 65,
+      "backgroundColor": "#c3fae8",
+      "fillStyle": "solid",
+      "strokeColor": "#099268",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t95",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t95",
+      "x": 650,
+      "y": 125,
+      "width": 145,
+      "height": 45,
+      "text": "IMU姿态\n加速度计/陀螺仪",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r94",
+      "originalText": "IMU姿态\n加速度计/陀螺仪",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "bg96",
+      "x": 20,
+      "y": 225,
+      "width": 820,
+      "height": 200,
+      "backgroundColor": "#d3f9d8",
+      "fillStyle": "solid",
+      "strokeColor": "#2b8a3e",
+      "strokeWidth": 1,
+      "opacity": 25,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t97",
+      "x": 40,
+      "y": 236,
+      "text": "AMP 异构处理核心 (SG2000)",
+      "fontSize": 22,
+      "fontFamily": 1,
+      "strokeColor": "#2b8a3e",
+      "originalText": "AMP 异构处理核心 (SG2000)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "bg98",
+      "x": 40,
+      "y": 275,
+      "width": 340,
+      "height": 135,
+      "backgroundColor": "#ffffff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 1,
+      "opacity": 15,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "r99",
+      "x": 55,
+      "y": 290,
+      "width": 130,
+      "height": 60,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t100",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t100",
+      "x": 65,
+      "y": 300,
+      "width": 110,
+      "height": 40,
+      "text": "ARM A53\nLinux(Buildroot)",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r99",
+      "originalText": "ARM A53\nLinux(Buildroot)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r101",
+      "x": 200,
+      "y": 290,
+      "width": 160,
+      "height": 60,
+      "backgroundColor": "#d0ebff",
+      "fillStyle": "solid",
+      "strokeColor": "#1971c2",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t102",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t102",
+      "x": 210,
+      "y": 300,
+      "width": 140,
+      "height": 40,
+      "text": "TPU推理\n物体检测/分类",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r101",
+      "originalText": "TPU推理\n物体检测/分类",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r103",
+      "x": 200,
+      "y": 355,
+      "width": 160,
+      "height": 55,
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeColor": "#339af0",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t104",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t104",
+      "x": 210,
+      "y": 365,
+      "width": 140,
+      "height": 35,
+      "text": "决策规划\n场景理解/路径",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r103",
+      "originalText": "决策规划\n场景理解/路径",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "bg105",
+      "x": 420,
+      "y": 275,
+      "width": 395,
+      "height": 135,
+      "backgroundColor": "#fff9db",
+      "fillStyle": "solid",
+      "strokeColor": "#f08c00",
+      "strokeWidth": 1,
+      "opacity": 15,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "r106",
+      "x": 435,
+      "y": 290,
+      "width": 140,
+      "height": 60,
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#f08c00",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t107",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t107",
+      "x": 445,
+      "y": 300,
+      "width": 120,
+      "height": 40,
+      "text": "RISC-V C906\nFreeRTOS",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r106",
+      "originalText": "RISC-V C906\nFreeRTOS",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r108",
+      "x": 590,
+      "y": 290,
+      "width": 160,
+      "height": 60,
+      "backgroundColor": "#ffe8a1",
+      "fillStyle": "solid",
+      "strokeColor": "#f59f00",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t109",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t109",
+      "x": 600,
+      "y": 300,
+      "width": 140,
+      "height": 40,
+      "text": "硬实时控制\n毫秒级响应",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r108",
+      "originalText": "硬实时控制\n毫秒级响应",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r110",
+      "x": 590,
+      "y": 355,
+      "width": 160,
+      "height": 55,
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#fcc419",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t111",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t111",
+      "x": 600,
+      "y": 365,
+      "width": 140,
+      "height": 35,
+      "text": "电机/PWM\n振动触觉反馈",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r110",
+      "originalText": "电机/PWM\n振动触觉反馈",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "bg112",
+      "x": 20,
+      "y": 450,
+      "width": 820,
+      "height": 130,
+      "backgroundColor": "#f8f0fc",
+      "fillStyle": "solid",
+      "strokeColor": "#9c36b5",
+      "strokeWidth": 1,
+      "opacity": 25,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t113",
+      "x": 40,
+      "y": 459,
+      "text": "多模态反馈输出层",
+      "fontSize": 22,
+      "fontFamily": 1,
+      "strokeColor": "#9c36b5",
+      "originalText": "多模态反馈输出层",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r114",
+      "x": 60,
+      "y": 500,
+      "width": 160,
+      "height": 60,
+      "backgroundColor": "#f3d9fa",
+      "fillStyle": "solid",
+      "strokeColor": "#ae3ec9",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t115",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t115",
+      "x": 70,
+      "y": 510,
+      "width": 140,
+      "height": 40,
+      "text": "触觉反馈\n振动马达阵列",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r114",
+      "originalText": "触觉反馈\n振动马达阵列",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r116",
+      "x": 260,
+      "y": 500,
+      "width": 150,
+      "height": 60,
+      "backgroundColor": "#e5dbff",
+      "fillStyle": "solid",
+      "strokeColor": "#7048e8",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t117",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t117",
+      "x": 270,
+      "y": 510,
+      "width": 130,
+      "height": 40,
+      "text": "语音播报\nTTS音频输出",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r116",
+      "originalText": "语音播报\nTTS音频输出",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r118",
+      "x": 450,
+      "y": 500,
+      "width": 150,
+      "height": 60,
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeColor": "#7950f2",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t119",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t119",
+      "x": 460,
+      "y": 510,
+      "width": 130,
+      "height": 40,
+      "text": "LED指示\n状态提示灯",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r118",
+      "originalText": "LED指示\n状态提示灯",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r120",
+      "x": 650,
+      "y": 500,
+      "width": 150,
+      "height": 60,
+      "backgroundColor": "#f3d9fa",
+      "fillStyle": "solid",
+      "strokeColor": "#9c36b5",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t121",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t121",
+      "x": 660,
+      "y": 510,
+      "width": 130,
+      "height": 40,
+      "text": "蓝牙/WiFi\n手机APP联动",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r120",
+      "originalText": "蓝牙/WiFi\n手机APP联动",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "a122",
+      "x": 400,
+      "y": 195,
+      "width": 0,
+      "height": 30,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "strokeColor": "#4a9eed",
+      "strokeWidth": 3,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a123",
+      "x": 400,
+      "y": 425,
+      "width": 0,
+      "height": 25,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          25
+        ]
+      ],
+      "strokeColor": "#9c36b5",
+      "strokeWidth": 3,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a124",
+      "x": 380,
+      "y": 330,
+      "width": 40,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0
+        ]
+      ],
+      "strokeColor": "#f08c00",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

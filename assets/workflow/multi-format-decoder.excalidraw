@@ -1,0 +1,578 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text",
+      "id": "title",
+      "x": 100,
+      "y": 10,
+      "text": "多格式自适应解码器架构",
+      "fontSize": 28,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "多格式自适应解码器架构",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "sub",
+      "x": 180,
+      "y": 48,
+      "text": "一套代码兼容三种模型输出格式",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#757575",
+      "originalText": "一套代码兼容三种模型输出格式",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "inp",
+      "x": 250,
+      "y": 80,
+      "width": 200,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_inp",
+          "type": "text"
+        },
+        {
+          "id": "ad",
+          "type": "arrow"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_inp",
+      "x": 255,
+      "y": 95,
+      "width": 190,
+      "height": 25,
+      "text": "TPU推理输出张量",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "inp",
+      "originalText": "TPU推理输出张量",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "ad",
+      "x": 350,
+      "y": 140,
+      "width": 0,
+      "height": 40,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ],
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "diamond",
+      "id": "dec",
+      "x": 250,
+      "y": 190,
+      "width": 200,
+      "height": 120,
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_dec",
+          "type": "text"
+        },
+        {
+          "id": "a1",
+          "type": "arrow"
+        },
+        {
+          "id": "a2",
+          "type": "arrow"
+        },
+        {
+          "id": "a3",
+          "type": "arrow"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_dec",
+      "x": 260,
+      "y": 225,
+      "width": 180,
+      "height": 50,
+      "text": "判断 output_num\n(输出张量数量)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "dec",
+      "originalText": "判断 output_num\n(输出张量数量)",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "a1",
+      "x": 250,
+      "y": 250,
+      "width": -100,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -100,
+          0
+        ]
+      ],
+      "strokeColor": "#ef4444",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "boundElements": [
+        {
+          "id": "t_a1",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_a1",
+      "x": 170,
+      "y": 230,
+      "width": 60,
+      "height": 20,
+      "text": "==2",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#ef4444",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "a1",
+      "originalText": "==2",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "p1",
+      "x": 30,
+      "y": 230,
+      "width": 180,
+      "height": 80,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeColor": "#ef4444",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_p1",
+          "type": "text"
+        },
+        {
+          "id": "a1b",
+          "type": "arrow"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_p1",
+      "x": 35,
+      "y": 245,
+      "width": 170,
+      "height": 50,
+      "text": "YOLOv5s Split解码\nbbox(独立) + cls(独立)\nxywh→xyxy转换",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "p1",
+      "originalText": "YOLOv5s Split解码\nbbox(独立) + cls(独立)\nxywh→xyxy转换",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "a2",
+      "x": 350,
+      "y": 310,
+      "width": 0,
+      "height": 40,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ],
+      "strokeColor": "#4a9eed",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "boundElements": [
+        {
+          "id": "t_a2",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_a2",
+      "x": 360,
+      "y": 318,
+      "width": 36,
+      "height": 20,
+      "text": "==1",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#4a9eed",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "a2",
+      "originalText": "==1",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "p2",
+      "x": 250,
+      "y": 360,
+      "width": 200,
+      "height": 80,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_p2",
+          "type": "text"
+        },
+        {
+          "id": "a2b",
+          "type": "arrow"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_p2",
+      "x": 255,
+      "y": 380,
+      "width": 190,
+      "height": 40,
+      "text": "YOLOv5s Concat解码\nbbox+cls拼接格式",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "p2",
+      "originalText": "YOLOv5s Concat解码\nbbox+cls拼接格式",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "a3",
+      "x": 450,
+      "y": 250,
+      "width": 100,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          100,
+          0
+        ]
+      ],
+      "strokeColor": "#22c55e",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "boundElements": [
+        {
+          "id": "t_a3",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_a3",
+      "x": 470,
+      "y": 230,
+      "width": 36,
+      "height": 20,
+      "text": "==6",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#22c55e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "a3",
+      "originalText": "==6",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "p3",
+      "x": 490,
+      "y": 230,
+      "width": 180,
+      "height": 80,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_p3",
+          "type": "text"
+        },
+        {
+          "id": "a3b",
+          "type": "arrow"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_p3",
+      "x": 495,
+      "y": 245,
+      "width": 170,
+      "height": 50,
+      "text": "YOLOv8标准解码\n三尺度 × 两分支\n= 6个输出",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "p3",
+      "originalText": "YOLOv8标准解码\n三尺度 × 两分支\n= 6个输出",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "a1b",
+      "x": 120,
+      "y": 310,
+      "width": 170,
+      "height": 130,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          170,
+          130
+        ]
+      ],
+      "strokeColor": "#ef4444",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a2b",
+      "x": 350,
+      "y": 440,
+      "width": 0,
+      "height": 40,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ],
+      "strokeColor": "#4a9eed",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a3b",
+      "x": 580,
+      "y": 310,
+      "width": -170,
+      "height": 130,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -170,
+          130
+        ]
+      ],
+      "strokeColor": "#22c55e",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "rectangle",
+      "id": "nms",
+      "x": 250,
+      "y": 490,
+      "width": 200,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeColor": "#8b5cf6",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_nms",
+          "type": "text"
+        },
+        {
+          "id": "af",
+          "type": "arrow"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_nms",
+      "x": 255,
+      "y": 505,
+      "width": 190,
+      "height": 25,
+      "text": "统一 NMS 后处理",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "nms",
+      "originalText": "统一 NMS 后处理",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "af",
+      "x": 350,
+      "y": 550,
+      "width": 0,
+      "height": 40,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ],
+      "strokeColor": "#8b5cf6",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "rectangle",
+      "id": "final",
+      "x": 250,
+      "y": 600,
+      "width": 200,
+      "height": 60,
+      "roundness": {
+        "type": 3
+      },
+      "backgroundColor": "#c3fae8",
+      "fillStyle": "solid",
+      "strokeColor": "#06b6d4",
+      "strokeWidth": 2,
+      "boundElements": [
+        {
+          "id": "t_final",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t_final",
+      "x": 255,
+      "y": 615,
+      "width": 190,
+      "height": 25,
+      "text": "统一检测结果",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "final",
+      "originalText": "统一检测结果",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "hl",
+      "x": 30,
+      "y": 500,
+      "text": "优势:\n• 即插即用, 换模型无需改代码\n• 公平对比不同模型精度\n• 向前兼容新模型格式",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#15803d",
+      "originalText": "优势:\n• 即插即用, 换模型无需改代码\n• 公平对比不同模型精度\n• 向前兼容新模型格式",
+      "autoResize": true
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

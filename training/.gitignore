@@ -1,0 +1,13 @@
+__pycache__/
+runs/
+exports/
+traffic-light/
+traffic_light_yolo/images/
+traffic_light_yolo/labels/
+*.pt
+*.onnx
+*.zip
+*.cache
+*.jpg
+*.png
+*.log

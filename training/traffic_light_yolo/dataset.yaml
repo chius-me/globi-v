@@ -1,0 +1,8 @@
+path: .
+train: images/train
+val: images/val
+nc: 3
+names:
+  0: red_light
+  1: green_light
+  2: yellow_light

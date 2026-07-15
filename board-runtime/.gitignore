@@ -1,0 +1,26 @@
+# Build outputs
+**/build/
+**/out/
+
+# Python cache
+**/__pycache__/
+**/*.pyc
+
+# Binaries and objects
+**/*.o
+**/*.a
+**/*.so
+**/*.npz
+**/*.log
+
+# Generated evaluation assets
+minimal-cviruntime-runner/vis/
+minimal-cviruntime-runner/batch_validation/sweep_json/
+minimal-cviruntime-runner/batch_validation/sweep_vis/
+minimal-cviruntime-runner/batch_validation/yellow_param_sweep_vis/
+
+# Visual artifacts
+**/*.jpg
+**/*.jpeg
+**/*.png
+**/*.webp

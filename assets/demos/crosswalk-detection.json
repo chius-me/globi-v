@@ -1,0 +1,15 @@
+{
+  "image": "./test-images/crosswalk/new_case_001.jpg",
+  "output_npz": "",
+  "count": 1,
+  "conf": 0.1000,
+  "iou": 0.5000,
+  "detections": [
+    {
+      "class_id": 0,
+      "class_name": "crosswalk",
+      "confidence": 0.2249,
+      "xyxy": [35.6655, 165.5861, 704.5745, 334.4039]
+    }
+  ]
+}

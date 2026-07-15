@@ -1,0 +1,92 @@
+# Local worktrees and tools
+.worktrees/
+.local-tools/
+.venv-*/
+.env
+.env.*
+!.env.example
+
+# Python and editor caches
+**/__pycache__/
+**/*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/
+*~
+
+# Build and generated output
+**/build/
+**/out/
+**/output/
+**/outputs/
+**/runs/
+**/exports/
+**/work/
+**/tmp/
+**/temp/
+**/*.o
+**/*.a
+**/*.so
+**/*.d
+**/*.log
+
+# Models, tensors, datasets, and generated evaluations
+**/*.pt
+**/*.pth
+**/*.onnx
+**/*.cvimodel
+**/*.npz
+**/*.npy
+**/datasets/
+**/data/images/
+**/data/labels/
+eval-models/
+eval-videos/
+runs/
+new-model/
+组员训练的模型/
+
+# Videos and archives
+**/*.mp4
+**/*.avi
+**/*.mov
+**/*.mkv
+**/*.webm
+**/*.flv
+**/*.wmv
+**/*.tar
+**/*.tar.gz
+**/*.tgz
+**/*.zip
+**/*.7z
+**/*.rar
+
+# SDKs, upstream mirrors, and vendor workspaces
+cvitek-tdl-sdk-cv180x/
+cvitek-tdl-sdk-sg200x/
+duo-buildroot-sdk-v2/
+duo-examples/
+duo-files/
+duo-multimedia-examples/
+duo-tdl-examples/
+duo-tpu/
+milkv-duo-smallcore-freertos/
+milkv.io/
+sophgo/
+tdl-models/
+third_party/
+tpu-mlir/
+tpu-sdk-cv180x/
+
+# Local workspace archives and deliverable bundles
+archive/
+backup/
+deliverables/
+experiments/
+final_report/
+其他/
+
+# Windows alternate data stream markers
+*:Zone.Identifier

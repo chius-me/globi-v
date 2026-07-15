@@ -1,0 +1,734 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text",
+      "id": "t125",
+      "x": 260,
+      "y": 10,
+      "text": "AMP 实时架构：双核协作机制",
+      "fontSize": 30,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "AMP 实时架构：双核协作机制",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "bg126",
+      "x": 30,
+      "y": 70,
+      "width": 380,
+      "height": 500,
+      "backgroundColor": "#dbe4ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 1,
+      "opacity": 30,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "bg127",
+      "x": 440,
+      "y": 70,
+      "width": 390,
+      "height": 500,
+      "backgroundColor": "#fff9db",
+      "fillStyle": "solid",
+      "strokeColor": "#f08c00",
+      "strokeWidth": 1,
+      "opacity": 30,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t128",
+      "x": 120,
+      "y": 85,
+      "text": "ARM Cortex-A53 @1GHz\nLinux (Buildroot)",
+      "fontSize": 24,
+      "fontFamily": 1,
+      "strokeColor": "#1971c2",
+      "originalText": "ARM Cortex-A53 @1GHz\nLinux (Buildroot)",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "t129",
+      "x": 530,
+      "y": 85,
+      "text": "RISC-V C906 @1GHz\nFreeRTOS",
+      "fontSize": 24,
+      "fontFamily": 1,
+      "strokeColor": "#e8590c",
+      "originalText": "RISC-V C906 @1GHz\nFreeRTOS",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r130",
+      "x": 55,
+      "y": 140,
+      "width": 330,
+      "height": 55,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t131",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t131",
+      "x": 65,
+      "y": 150,
+      "width": 310,
+      "height": 35,
+      "text": "TPU 模型推理\n(117ms/帧 INT8)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r130",
+      "originalText": "TPU 模型推理\n(117ms/帧 INT8)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r132",
+      "x": 55,
+      "y": 210,
+      "width": 330,
+      "height": 55,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t133",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t133",
+      "x": 65,
+      "y": 220,
+      "width": 310,
+      "height": 35,
+      "text": "多格式自适应解码\n(5ms后处理)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r132",
+      "originalText": "多格式自适应解码\n(5ms后处理)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r134",
+      "x": 55,
+      "y": 280,
+      "width": 330,
+      "height": 55,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t135",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t135",
+      "x": 65,
+      "y": 290,
+      "width": 310,
+      "height": 35,
+      "text": "RTSP 视频推流\n(29fps H.264)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r134",
+      "originalText": "RTSP 视频推流\n(29fps H.264)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r136",
+      "x": 55,
+      "y": 350,
+      "width": 330,
+      "height": 55,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t137",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t137",
+      "x": 65,
+      "y": 360,
+      "width": 310,
+      "height": 35,
+      "text": "场景理解与决策\n(路径规划)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r136",
+      "originalText": "场景理解与决策\n(路径规划)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r138",
+      "x": 55,
+      "y": 420,
+      "width": 330,
+      "height": 55,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t139",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t139",
+      "x": 65,
+      "y": 430,
+      "width": 310,
+      "height": 35,
+      "text": "Linux 系统管理\n(网络/存储/日志)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r138",
+      "originalText": "Linux 系统管理\n(网络/存储/日志)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r140",
+      "x": 470,
+      "y": 140,
+      "width": 330,
+      "height": 55,
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#f08c00",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t141",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t141",
+      "x": 480,
+      "y": 150,
+      "width": 310,
+      "height": 35,
+      "text": "毫秒级障碍物检测\n(超声波/红外)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r140",
+      "originalText": "毫秒级障碍物检测\n(超声波/红外)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r142",
+      "x": 470,
+      "y": 210,
+      "width": 330,
+      "height": 55,
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#f08c00",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t143",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t143",
+      "x": 480,
+      "y": 220,
+      "width": 310,
+      "height": 35,
+      "text": "触觉反馈控制\n(振动马达 PWM)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r142",
+      "originalText": "触觉反馈控制\n(振动马达 PWM)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r144",
+      "x": 470,
+      "y": 280,
+      "width": 330,
+      "height": 55,
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#f08c00",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t145",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t145",
+      "x": 480,
+      "y": 290,
+      "width": 310,
+      "height": 35,
+      "text": "紧急制动触发\n(<10ms 响应)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r144",
+      "originalText": "紧急制动触发\n(<10ms 响应)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r146",
+      "x": 470,
+      "y": 350,
+      "width": 330,
+      "height": 55,
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#f08c00",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t147",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t147",
+      "x": 480,
+      "y": 360,
+      "width": 310,
+      "height": 35,
+      "text": "IMU 姿态实时解算\n(100Hz 采样)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r146",
+      "originalText": "IMU 姿态实时解算\n(100Hz 采样)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r148",
+      "x": 470,
+      "y": 420,
+      "width": 330,
+      "height": 55,
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#f08c00",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t149",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t149",
+      "x": 480,
+      "y": 430,
+      "width": 310,
+      "height": 35,
+      "text": "FreeRTOS 任务调度\n(优先级抢占)",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r148",
+      "originalText": "FreeRTOS 任务调度\n(优先级抢占)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "bg150",
+      "x": 385,
+      "y": 140,
+      "width": 60,
+      "height": 360,
+      "backgroundColor": "#d3f9d8",
+      "fillStyle": "solid",
+      "strokeColor": "#2b8a3e",
+      "strokeWidth": 1,
+      "opacity": 40,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t151",
+      "x": 395,
+      "y": 300,
+      "text": "共\n享\n内\n存\n\nI\nP\nC",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#2b8a3e",
+      "originalText": "共\n享\n内\n存\n\nI\nP\nC",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "a152",
+      "x": 385,
+      "y": 180,
+      "width": 55,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          55,
+          0
+        ]
+      ],
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a153",
+      "x": 440,
+      "y": 200,
+      "width": -45,
+      "height": 5,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -45,
+          5
+        ]
+      ],
+      "strokeColor": "#f08c00",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a154",
+      "x": 385,
+      "y": 250,
+      "width": 55,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          55,
+          0
+        ]
+      ],
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a155",
+      "x": 440,
+      "y": 270,
+      "width": -45,
+      "height": 5,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -45,
+          5
+        ]
+      ],
+      "strokeColor": "#f08c00",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a156",
+      "x": 385,
+      "y": 320,
+      "width": 55,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          55,
+          0
+        ]
+      ],
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a157",
+      "x": 440,
+      "y": 340,
+      "width": -45,
+      "height": 5,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -45,
+          5
+        ]
+      ],
+      "strokeColor": "#f08c00",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a158",
+      "x": 385,
+      "y": 390,
+      "width": 55,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          55,
+          0
+        ]
+      ],
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a159",
+      "x": 440,
+      "y": 410,
+      "width": -45,
+      "height": 5,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -45,
+          5
+        ]
+      ],
+      "strokeColor": "#f08c00",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a160",
+      "x": 385,
+      "y": 460,
+      "width": 55,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          55,
+          0
+        ]
+      ],
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow",
+      "id": "a161",
+      "x": 440,
+      "y": 480,
+      "width": -45,
+      "height": 5,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -45,
+          5
+        ]
+      ],
+      "strokeColor": "#f08c00",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "rectangle",
+      "id": "r162",
+      "x": 100,
+      "y": 530,
+      "width": 650,
+      "height": 55,
+      "backgroundColor": "#c3fae8",
+      "fillStyle": "solid",
+      "strokeColor": "#099268",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t163",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t163",
+      "x": 110,
+      "y": 540,
+      "width": 630,
+      "height": 35,
+      "text": "ARM/Linux = 视觉感知+决策    RISC-V/FreeRTOS = 实时控制+安全    RPMSG共享内存通信",
+      "fontSize": 17,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r162",
+      "originalText": "ARM/Linux = 视觉感知+决策    RISC-V/FreeRTOS = 实时控制+安全    RPMSG共享内存通信",
+      "autoResize": true
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

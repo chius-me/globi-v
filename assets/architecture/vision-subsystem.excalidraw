@@ -1,0 +1,660 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text",
+      "id": "t164",
+      "x": 250,
+      "y": 10,
+      "text": "Globi-V 视觉感知子系统",
+      "fontSize": 30,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "originalText": "Globi-V 视觉感知子系统",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "bg165",
+      "x": 30,
+      "y": 60,
+      "width": 800,
+      "height": 160,
+      "backgroundColor": "#f1f3f5",
+      "fillStyle": "solid",
+      "strokeColor": "#adb5bd",
+      "strokeWidth": 1,
+      "opacity": 10,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t166",
+      "x": 40,
+      "y": 72,
+      "text": "端侧视觉推理管线",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "strokeColor": "#495057",
+      "originalText": "端侧视觉推理管线",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r167",
+      "x": 55,
+      "y": 110,
+      "width": 90,
+      "height": 80,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t168",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t168",
+      "x": 65,
+      "y": 120,
+      "width": 70,
+      "height": 60,
+      "text": "GC2083\n摄像头",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r167",
+      "originalText": "GC2083\n摄像头",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r169",
+      "x": 160,
+      "y": 110,
+      "width": 90,
+      "height": 80,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t170",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t170",
+      "x": 170,
+      "y": 120,
+      "width": 70,
+      "height": 60,
+      "text": "VI\n采集",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r169",
+      "originalText": "VI\n采集",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r171",
+      "x": 265,
+      "y": 110,
+      "width": 90,
+      "height": 80,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t172",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t172",
+      "x": 275,
+      "y": 120,
+      "width": 70,
+      "height": 60,
+      "text": "VPSS\n预处理",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r171",
+      "originalText": "VPSS\n预处理",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r173",
+      "x": 370,
+      "y": 110,
+      "width": 90,
+      "height": 80,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t174",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t174",
+      "x": 380,
+      "y": 120,
+      "width": 70,
+      "height": 60,
+      "text": "TPU\n推理",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r173",
+      "originalText": "TPU\n推理",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r175",
+      "x": 447,
+      "y": 110,
+      "width": 85,
+      "height": 80,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t176",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t176",
+      "x": 457,
+      "y": 120,
+      "width": 65,
+      "height": 60,
+      "text": "解码\n后处理",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r175",
+      "originalText": "解码\n后处理",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r177",
+      "x": 545,
+      "y": 110,
+      "width": 85,
+      "height": 80,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t178",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t178",
+      "x": 555,
+      "y": 120,
+      "width": 65,
+      "height": 60,
+      "text": "RGN\n叠加",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r177",
+      "originalText": "RGN\n叠加",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r179",
+      "x": 643,
+      "y": 110,
+      "width": 85,
+      "height": 80,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t180",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t180",
+      "x": 653,
+      "y": 120,
+      "width": 65,
+      "height": 60,
+      "text": "RTSP\n输出",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r179",
+      "originalText": "RTSP\n输出",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "bg181",
+      "x": 30,
+      "y": 250,
+      "width": 800,
+      "height": 320,
+      "backgroundColor": "#f8f9fa",
+      "fillStyle": "solid",
+      "strokeColor": "#ced4da",
+      "strokeWidth": 1,
+      "opacity": 8,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "t182",
+      "x": 40,
+      "y": 262,
+      "text": "当前已完成：交通信号灯三分类检测",
+      "fontSize": 22,
+      "fontFamily": 1,
+      "strokeColor": "#2b8a3e",
+      "originalText": "当前已完成：交通信号灯三分类检测",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r183",
+      "x": 55,
+      "y": 300,
+      "width": 180,
+      "height": 90,
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeColor": "#e03131",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t184",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t184",
+      "x": 65,
+      "y": 310,
+      "width": 160,
+      "height": 70,
+      "text": "红灯(red)\nmAP50=0.98\n样本最多",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r183",
+      "originalText": "红灯(red)\nmAP50=0.98\n样本最多",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r185",
+      "x": 255,
+      "y": 300,
+      "width": 180,
+      "height": 90,
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeColor": "#f08c00",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t186",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t186",
+      "x": 265,
+      "y": 310,
+      "width": 160,
+      "height": 70,
+      "text": "黄灯(yellow)\nmAP50=0.95\n样本最少",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r185",
+      "originalText": "黄灯(yellow)\nmAP50=0.95\n样本最少",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r187",
+      "x": 455,
+      "y": 300,
+      "width": 180,
+      "height": 90,
+      "backgroundColor": "#d3f9d8",
+      "fillStyle": "solid",
+      "strokeColor": "#2b8a3e",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t188",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t188",
+      "x": 465,
+      "y": 310,
+      "width": 160,
+      "height": 70,
+      "text": "绿灯(green)\nmAP50=0.96\n表现稳健",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r187",
+      "originalText": "绿灯(green)\nmAP50=0.96\n表现稳健",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r189",
+      "x": 660,
+      "y": 300,
+      "width": 150,
+      "height": 90,
+      "backgroundColor": "#d0ebff",
+      "fillStyle": "solid",
+      "strokeColor": "#228be6",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t190",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t190",
+      "x": 670,
+      "y": 310,
+      "width": 130,
+      "height": 70,
+      "text": "技术栈\nYOLOv5s\nTPU INT8 量化",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r189",
+      "originalText": "技术栈\nYOLOv5s\nTPU INT8 量化",
+      "autoResize": true
+    },
+    {
+      "type": "text",
+      "id": "t191",
+      "x": 40,
+      "y": 420,
+      "text": "后续扩展方向（方案设计阶段）",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "strokeColor": "#868e96",
+      "originalText": "后续扩展方向（方案设计阶段）",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r192",
+      "x": 55,
+      "y": 455,
+      "width": 180,
+      "height": 75,
+      "backgroundColor": "#e5dbff",
+      "fillStyle": "solid",
+      "strokeColor": "#7048e8",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t193",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t193",
+      "x": 65,
+      "y": 465,
+      "width": 160,
+      "height": 55,
+      "text": "盲道检测\n分割+循迹",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r192",
+      "originalText": "盲道检测\n分割+循迹",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r194",
+      "x": 255,
+      "y": 455,
+      "width": 180,
+      "height": 75,
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeColor": "#7950f2",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t195",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t195",
+      "x": 265,
+      "y": 465,
+      "width": 160,
+      "height": 55,
+      "text": "障碍物检测\n通用目标检测",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r194",
+      "originalText": "障碍物检测\n通用目标检测",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r196",
+      "x": 455,
+      "y": 455,
+      "width": 180,
+      "height": 75,
+      "backgroundColor": "#c3fae8",
+      "fillStyle": "solid",
+      "strokeColor": "#099268",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t197",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t197",
+      "x": 465,
+      "y": 465,
+      "width": 160,
+      "height": 55,
+      "text": "深度估计\n单目深度/双目",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r196",
+      "originalText": "深度估计\n单目深度/双目",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "r198",
+      "x": 660,
+      "y": 455,
+      "width": 150,
+      "height": 75,
+      "backgroundColor": "#f3d9fa",
+      "fillStyle": "solid",
+      "strokeColor": "#9c36b5",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "t199",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "t199",
+      "x": 670,
+      "y": 465,
+      "width": 130,
+      "height": 55,
+      "text": "人脸/场景\n环境理解",
+      "fontSize": 18,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "r198",
+      "originalText": "人脸/场景\n环境理解",
+      "autoResize": true
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

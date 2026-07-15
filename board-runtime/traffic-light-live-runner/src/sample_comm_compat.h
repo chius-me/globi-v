@@ -1,0 +1,6 @@
+#ifndef TRAFFIC_LIGHT_LIVE_RUNNER_SAMPLE_COMM_COMPAT_H_
+#define TRAFFIC_LIGHT_LIVE_RUNNER_SAMPLE_COMM_COMPAT_H_
+
+typedef struct ST_AudioUnitTestCfg ST_AudioUnitTestCfg;
+
+#endif
